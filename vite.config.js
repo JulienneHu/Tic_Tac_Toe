@@ -1,7 +1,10 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
+
+const repoName = 'Tic_Tac_Toe'; 
+
 export default defineConfig({
+  base: `/${Tic_Tac_Toe}/`,
   plugins: [react()],
-})
+});
